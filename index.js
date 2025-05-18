@@ -46,7 +46,7 @@ const {
   const mode = config.MODE
   const online = config.ALWAYS_ONLINE
   const status = config.AUTO_STATUS_SEEN
-  const ownerNumber = ['923003588997']
+  const ownerNumber = ['923497749223']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -70,7 +70,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("STARK-ALI~", '');
+const sessdata = config.SESSION_ID.replace("STARK-ALI~ucRgya5S#qwBNJRkR2sMGGAz7q9tH5eJZs07IhI1nnqZsQa2GF64", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
